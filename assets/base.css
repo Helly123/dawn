@@ -3313,3 +3313,7 @@ details-disclosure>details {
     }
   }
 }
+
+.banner .banner__content {
+  border: 4px solid #fff;
+}
