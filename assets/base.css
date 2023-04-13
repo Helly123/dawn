@@ -3321,3 +3321,6 @@ details-disclosure>details {
 
 
 /* Hello Ayush !! */
+.banner .banner__content .banner__box{
+  border: 4px solid #000;
+}
