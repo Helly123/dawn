@@ -1,5 +1,8 @@
 /* Color custom properties */
+<<<<<<< HEAD
 
+=======
+>>>>>>> Harmisha
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
@@ -3314,3 +3317,4 @@ details-disclosure>details {
   }
 }
 /* Ayush */
+/* Harmisha */
