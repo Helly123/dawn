@@ -3316,6 +3316,6 @@ details-disclosure>details {
   }
 }
 
-.banner .banner__content .banner__box{
-  border: 4px solid #fff;
+.banner .banner__content .banner__box {
+  border: 4px solid #000000;
 }
