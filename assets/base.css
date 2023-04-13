@@ -3308,7 +3308,7 @@ details-disclosure>details {
 
     to {
       transform: translateY(0);
-      margin-top: 10px;
+      opacity: 1;
     }
   }
 }
