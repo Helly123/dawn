@@ -1,5 +1,8 @@
 /* Color custom properties */
+<<<<<<< HEAD
 /* Ayush Branch */
+=======
+>>>>>>> 3e0b83b916fa16cd6e5d1c1072233fe8d5cda1b8
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
@@ -3311,18 +3314,12 @@ details-disclosure>details {
 
     to {
       transform: translateY(0);
-      opacity: 1;
+      opacity: 1; 
     }
   }
 }
-
-.banner .banner__content .banner__box{
-  border: 4px solid #000;
-}
-
-/* Harmisha    */
-
-
-
-
-/* Hello Ayush !! */
+/* Shopify v2 */
+/* Harmisha */
+/* 1 2 3 */
+/* Ayush Main */
+/* Harmisha v2*/
