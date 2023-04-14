@@ -1,8 +1,4 @@
 /* Color custom properties */
-<<<<<<< HEAD
-/* Ayush Branch */
-=======
->>>>>>> 3e0b83b916fa16cd6e5d1c1072233fe8d5cda1b8
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
