@@ -1,5 +1,5 @@
 /* Color custom properties */
-
+/* Ayush Branch */
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
@@ -1021,6 +1021,8 @@ summary::-webkit-details-marker {
 
 .title-wrapper--no-top-margin>.title {
   margin-top: 0;
+  border-bottom: 1px solid;
+  padding-bottom: 14px;
 }
 
 .subtitle {
@@ -3314,18 +3316,13 @@ details-disclosure>details {
   }
 }
 
-body {
-  background-color: #000;
+.banner .banner__content .banner__box{
+  border: 4px solid #000;
 }
-<<<<<<< HEAD
 
-/* --  -- */
-=======
-=========
+/* Harmisha    */
 
 
 
 
 /* Hello Ayush !! */
->>>>>>>>> Temporary merge branch 2
->>>>>>> Harmisha
