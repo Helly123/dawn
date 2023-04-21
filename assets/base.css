@@ -1020,6 +1020,8 @@ summary::-webkit-details-marker {
 
 .title-wrapper--no-top-margin>.title {
   margin-top: 0;
+  border-bottom: 1px solid;
+  padding-bottom: 14px;
 }
 
 .subtitle {
