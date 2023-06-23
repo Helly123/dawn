@@ -282,6 +282,10 @@
                   {%- endif -%}
                 </div>
               </div>
+            <p class="line-item-property__field">
+<label for="custom_photo">Photo (JPG or PNG)</label>
+<input required id="custom_photo" type="file" name="properties[Photo]">
+</p>
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
