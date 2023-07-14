@@ -3313,3 +3313,7 @@ details-disclosure > details {
     }
   }
 }
+
+.banner__box {
+  background: #575977 !important;
+}
