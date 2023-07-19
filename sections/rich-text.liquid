@@ -28,7 +28,8 @@
               >
                 {{ block.settings.heading }}
               </h2>
-            {%- when 'caption' -%}
+              <p>{{ block.settings.subheading }}</p> 
+            {%- when 'caption' -%} 
               <p
                 class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
@@ -198,6 +199,12 @@
           "id": "heading",
           "default": "Talk about your brand",
           "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "default": "Talk about your sub brand",
+          "label": "Subheading"
         },
         {
           "type": "select",
