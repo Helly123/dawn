@@ -1,0 +1,89 @@
+{% schema %}
+{
+  "name": "Multi Column Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our Features"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi Column Section"
+    }
+  ]
+}
+{% endschema %}
+
+<section class='multi-column-section'>
+  <div class='container'>
+    <h2>{{ section.settings.heading }}</h2>
+    <div class='columns'>
+      {% for block in section.blocks %}
+        <div class='column'>
+          <div class='column-content'>
+            {% if block.settings.image %}
+              {{ block.settings.image | image_url: width: 1500 | image_tag }}
+            {% endif %}
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .multi-column-section .columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .multi-column-section .column {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .multi-column-section .column:hover {
+    transform: translateY(-10px);
+  }
+
+  .multi-column-section .column-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .multi-column-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+</style>
