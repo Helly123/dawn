@@ -1,0 +1,77 @@
+{% schema %}
+{
+  "name": "Slider Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "slide_1",
+      "label": "Slide 1 Image"
+    },
+    {
+      "type": "text",
+      "id": "slide_1_text",
+      "label": "Slide 1 Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_2",
+      "label": "Slide 2 Image"
+    },
+    {
+      "type": "text",
+      "id": "slide_2_text",
+      "label": "Slide 2 Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider Section"
+    }
+  ]
+}
+{% endschema %}
+
+<div class='slider-section'>
+  <div class='slider'>
+    <div class='slide'>
+      {{ section.settings.slide_1 | image_url: width: 3500 | image_tag }}
+      <p>{{ section.settings.slide_1_text }}</p>
+    </div>
+    <div class='slide'>
+      {{ section.settings.slide_2 | image_url: width: 3500 | image_tag }}
+      <p>{{ section.settings.slide_2_text }}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .slider-section {
+    width: 100%;
+    overflow: hidden;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slider .slide');
+    const totalSlides = slides.length;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
+    }, 3000);
+  });
+</script>
