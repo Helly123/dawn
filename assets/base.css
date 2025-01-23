@@ -3337,3 +3337,7 @@ details-disclosure>details {
 .d-flex {
   display: flex;
 }
+
+.d-none {
+  display: none;
+}
